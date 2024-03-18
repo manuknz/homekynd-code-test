@@ -1,0 +1,25 @@
+#root {
+  height: 100vh;
+  width: 100vw;
+  background: black;
+}
+
+.fetchTitle {
+  color: yellow;
+  font-size: 16px;
+  font-weight: bold;
+  white-space: nowrap;
+}
+
+.container {
+  flex: 1;
+  background: #202035;
+  border-radius: 10px;
+  color: white;
+  padding: 10px 10px;
+  text-align: left;
+  transform: translate3d(calc(50% + 40px), 0, 0);
+  p {
+    white-space: nowrap;
+  }
+}

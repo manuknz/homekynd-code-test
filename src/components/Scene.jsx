@@ -1,8 +1,9 @@
 import { useRef, useState } from 'react'
+import { useFrame } from '@react-three/fiber'
 import { OrbitControls, Stars } from '@react-three/drei'
 
 import Geometry from './Geometry'
-import { useFrame } from '@react-three/fiber'
+import Hint from './Hint'
 
 const Scene = () => {
   const ref = useRef();
@@ -23,6 +24,7 @@ const Scene = () => {
         intensity={1}
       />
       <OrbitControls />
+      <Hint />
       <group 
         ref={ref}
         onClick={() => setIsClicked(!isClicked)}

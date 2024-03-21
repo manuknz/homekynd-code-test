@@ -1,5 +1,6 @@
 import { useRef, useState } from 'react'
 import { useFrame } from "@react-three/fiber"
+
 import Overlay from './Overlay';
 
 const Geometry = ({ position, colors, whatToFetch }) => {
